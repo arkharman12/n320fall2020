@@ -5,6 +5,7 @@ class VendingMachine {
         this.lays = 5
     }
 
+    // method for rendering the html
     render() {
         return `
             <div>Snickers: ${this.snickers}</div>
@@ -13,6 +14,7 @@ class VendingMachine {
         `
     }
 
+    // method for buying the snickers
     buySnickers() {
         if(this.snickers > 0) {
             this.snickers--
@@ -22,6 +24,7 @@ class VendingMachine {
         }
     }
     
+    // method for buying the kitkat
     buyKitkat() {
         if(this.kitkat > 0) {
             this.kitkat--
@@ -31,6 +34,7 @@ class VendingMachine {
         }
     }
     
+    // method for buying lays
     buyLays() {
         if(this.lays > 0) {
             this.lays--
@@ -42,15 +46,20 @@ class VendingMachine {
 }
 
 let aVendingMachone = new VendingMachine()
+// call the render on the machine so we can see the output on the page
 machineDiv.innerHTML = aVendingMachone.render()
 
+// main method for running the vending machine with button id
 function runMachine(clickedId) {
+    // if bought snickers
     if(clickedId == "snickers") {
         aVendingMachone.buySnickers()
-    } else if(clickedId == "kitkat") {
+    } else if(clickedId == "kitkat") { // if bought kitkat
         aVendingMachone.buyKitkat()
-    } else {
+    } else { // if bought lays
         aVendingMachone.buyLays()
     }
+
+    // render the page everytime something is bought
     machineDiv.innerHTML = aVendingMachone.render()
 }
