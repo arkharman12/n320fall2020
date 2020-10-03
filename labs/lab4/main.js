@@ -1,3 +1,5 @@
+// class deconstruction for TicTacToe
+
 class TicTacToe {
     constructor() {
         this.gameBoardState = [[ ]]
