@@ -1,3 +1,4 @@
+// get all the elements
 let firstXOne = document.getElementById("firstXOne")
 let firstXTwo = document.getElementById("firstXTwo")
 let secondCircle = document.getElementById("secondCircle")
@@ -13,7 +14,7 @@ let eigthCircle = document.getElementById("eigthCircle")
 let ninthXOne = document.getElementById("ninthXOne")
 let ninthXTwo = document.getElementById("ninthXTwo")
 
-
+// run the events on click
 firstXOne.addEventListener("click", onTrailClick)
 function onTrailClick(event) {
     event.target.style.stroke = "000000"
