@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    margin-left: 20px;
+}
+
+.blue-bar {
+    height: 110px;
+    background: darkblue;
+}
+
+.grid-parent {
+    margin: 50px;
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.grid-child {
+    height: 200px;
+    width: 400px;
+    background-color: purple;
+}
