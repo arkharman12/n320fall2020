@@ -21,6 +21,7 @@ body {
 }
 
 .grid-child {
+    cursor: pointer;
     height: 200px;
     width: 400px;
     background-color: purple;
