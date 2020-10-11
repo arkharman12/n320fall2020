@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css">
+		<title>Intro Vue Lab</title>
+	</head>
+	<body>
+        <div id="books-parent">
+            <div id="book-one">
+                <book-one
+                    v-for="book in bookOneInfo"
+                    v-bind:bookone-show="book">
+                </book-one>
+            </div>
+    
+            <div id="book-two">
+                <book-two
+                    v-if="!isHidden"
+                    v-for="book in bookTwoInfo"
+                    v-bind:booktwo-show="book">
+                </book-two>
+                <button v-on:click="isHidden = !isHidden">Toggle hide and show</button>
+            </div>
+
+        </div>
+
+		<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+		<script src="script.js"></script>
+	</body>
+</html>
