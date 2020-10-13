@@ -1,7 +1,13 @@
 // Book one component
 Vue.component("book-one", {
     props: ["bookoneShow"],
-    template: "<div>{{ bookoneShow.title }} &#9749; : {{ bookoneShow.author }}</div>"
+    template: `
+        <div>
+            <div>{{ bookoneShow.title }}</div>
+            <div id="cover-one">&#9749;</div>
+            <div>{{ bookoneShow.author }}</div>
+        </div>
+    `
 })
 
 let bookOne = new Vue({
@@ -9,7 +15,6 @@ let bookOne = new Vue({
     data: {
         bookOneInfo: [{
             title: "JavaScript&jQuery", 
-            cover: "", 
             author: "Jon Duckett"
         }]
     }
@@ -18,7 +23,13 @@ let bookOne = new Vue({
 // Book two component
 Vue.component("book-two", {
     props: ["booktwoShow"],
-    template: "<div>{{ booktwoShow.title }} &#128187; : {{ booktwoShow.author }}</div>"
+    template: `
+        <div>
+            <div>{{ booktwoShow.title }}</div>
+            <div id="cover-two">&#128187;</div>
+            <div>{{ booktwoShow.author }}</div>
+        </div>
+    `
 })
 
 let bookTwo = new Vue({
@@ -26,10 +37,9 @@ let bookTwo = new Vue({
     data: {
         bookTwoInfo: [{
             title: "Eloquent JavaScript", 
-            cover: "", 
             author: "Marjin Haverbeke"
         }],
 
-        isHidden: false
+        hidden: false
     }
 })

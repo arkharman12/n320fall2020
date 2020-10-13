@@ -17,11 +17,11 @@
     
             <div id="book-two">
                 <book-two
-                    v-if="!isHidden"
+                    v-if="!hidden"
                     v-for="book in bookTwoInfo"
                     v-bind:booktwo-show="book">
                 </book-two>
-                <button v-on:click="isHidden = !isHidden">Toggle hide and show</button>
+                <button v-on:click="hidden = !hidden">Hide/show</button>
             </div>
 
         </div>

@@ -1,27 +1,61 @@
 *, ::before, ::after {
+    box-sizing: border-box;
+}
+
+body {
     margin: 0;
     padding: 0;
 }
 
+#books-parent {
+    display: flex;
+}
+
 #book-one {
-    background: lightgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, lightblue , green);
+    min-width: 500px;
     max-width: 500px;
-    font-size: 40px;
+    min-height: 500px;
+    max-height: 500px;
+    font-size: 30px;
     margin: 10px;
     padding: 10px;
 }
 
+#cover-one {
+    font-size: 150px;
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+
+
 #book-two {
-    background: lightgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, yellow , red);
+    min-width: 500px;
     max-width: 500px;
-    font-size: 40px;
+    min-height: 500px;
+    max-height: 500px;
+    font-size: 30px;
     margin: 10px;
     padding: 10px;
+}
+
+#cover-two {
+    font-size: 150px;
+    margin-top: 90px;
+    margin-bottom: 90px;
 }
 
 button {
-    padding: 10px;
-    font-size: 16px;
-    margin: 10px;
+    padding: 5px;
+    font-size: 12px;
     border-radius: 50px;
 }
