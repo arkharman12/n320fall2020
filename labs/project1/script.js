@@ -182,7 +182,6 @@ class Board extends TicTacToe {
     this.rect.setAttribute("height", this.boardSize)
     this.rect.setAttribute("fill", "white")
     this.board.appendChild(this.rect)
-    console.log(this.board)
 
     // Draw the grid
     for (let i = 1; i < gridSize; i++) {
