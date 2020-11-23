@@ -65,7 +65,7 @@ function createScene() {
     particleSystem.addVelocityGradient(0, 2)
 
     // Load the particle texture
-    particleSystem.particleTexture = new BABYLON.Texture("images/particle.png", scene)
+    particleSystem.particleTexture = new BABYLON.Texture("images/particles.jpg", scene)
 
     return scene
 }
